@@ -48,9 +48,9 @@ describe('space invaders', () => {
     })
 
     it('should not be assigned to a ship', function() {
-      expect(tristan.ship_id).toBe(undefined)
-      expect(jon.ship_id).toBe(undefined)
-      expect(katie.ship_id).toBe(undefined)
+      expect(tristan.spaceshipid).toBe(undefined)
+      expect(jon.spaceshipid).toBe(undefined)
+      expect(katie.spaceshipid).toBe(undefined)
 
     })
 
@@ -138,7 +138,6 @@ describe('space invaders', () => {
       // console.log(tristian.currentShip)
       tristan.chargePhasers()
       expect(spaceship.phasersCharge).toBe('uncharged')
-      // debugger
       katie.chargePhasers()
       expect(spaceship.phasersCharge).toBe('charged!')
     })
