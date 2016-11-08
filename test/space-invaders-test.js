@@ -138,6 +138,7 @@ describe('space invaders', () => {
       // console.log(tristian.currentShip)
       tristan.chargePhasers()
       expect(spaceship.phasersCharge).toBe('uncharged')
+      // debugger
       katie.chargePhasers()
       expect(spaceship.phasersCharge).toBe('charged!')
     })
